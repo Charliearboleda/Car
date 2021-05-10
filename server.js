@@ -11,7 +11,7 @@ const MONGODB_URI = process.env.MONGODB_URI
 const PORT = process.env.PORT
 
 const carsController = require('./controllers/cars_controller.js')
-
+app.use(express.json())
 app.use('/cars', carsController)
 
 mongoose.connect(MONGODB_URI, {
