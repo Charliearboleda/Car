@@ -18,6 +18,14 @@ cars.post('/', (req,res)=>{
   })
 })
 
+cars.delete('/:id', (req,res)=>{
+  Cars.findByIdAndRemove(req.params.id, (err, deletedCar)=>{
+    Cars.find({}, (err, foundCar)=>[
+      res.json(foundCar)
+    ])
+  })
+})
+
 cars.put('/:id', (req, res)=>{
   Cars.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundCar)=>{
     if (err) {
