@@ -1,0 +1,24 @@
+{
+  "name": "car",
+  "version": "1.0.0",
+  "description": "Charlie Arboleda",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charliearboleda/Car.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Charliearboleda/Car/issues"
+  },
+  "homepage": "https://github.com/Charliearboleda/Car#readme",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1"
+  }
+}
